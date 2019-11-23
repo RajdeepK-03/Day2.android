@@ -31,7 +31,7 @@ public class FirstActivity extends AppCompatActivity implements View.OnClickList
     public void onClick(View view) {
         if (edtName.getText().toString().trim().length()!=0)
         {
-            Intent mIntent = new Intent(FirstActivity.this, SecondActivity.class);
+            Intent mIntent = new Intent(FirstActivity.this, SecondActivity.class) ;
             mIntent.putExtra("name", edtName.getText().toString());
             startActivity(mIntent);
         }
